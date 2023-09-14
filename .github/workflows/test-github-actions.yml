@@ -2,7 +2,8 @@ name: test-github-actions
 run-name: ${{github.actor}} is learning Github Actions
 on: [push]
 jobs:
-    check-bats-version:
+ check-bats-version:
+    # runs-on: ubuntu-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
